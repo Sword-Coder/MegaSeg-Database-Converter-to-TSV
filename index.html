@@ -3,9 +3,26 @@
   <head>
     <title>Apache MegaSeg Converter</title>
   </head>
-  <body>
-    <input type="file" id="databaseFile" accept=".megaseg" />
-    <button onclick="convertToTsv()">Convert to TSV</button>
+  <body style="display: flex; justify-content: center; align-items: center">
+    <div
+      style="
+        position: absolute;
+        top: 40%;
+        padding: 25px;
+        background-color: rgb(197, 197, 203);
+        border-radius: 15px;
+      "
+    >
+      <input
+        style="width: 300px"
+        type="file"
+        id="databaseFile"
+        accept=".megaseg"
+      />
+      <button style="align-items: center" onclick="convertToTsv()">
+        Convert to TSV
+      </button>
+    </div>
 
     <script src="converter.js"></script>
   </body>
